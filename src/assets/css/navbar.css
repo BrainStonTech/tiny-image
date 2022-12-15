@@ -1,0 +1,52 @@
+.main_nav{
+  position: sticky;
+  top: 0;
+  height: 70px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: var(--bgColor1);
+  z-index: 999;
+}
+
+.main_nav .container{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_nav .branding{
+  margin-top: 5px;
+}
+.main_nav .branding img{
+  height: 50px;
+}
+
+.main_nav .links{
+  list-style: none;
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 25px;
+  border: 1px solid var(--brdColor1);
+}
+.main_nav .links a{
+  height: 30px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bgColor1);
+  border-radius: 25px;
+  font-size: 14px;
+  font-family: var(--fontFamily1);
+  font-weight: 500;
+  color: var(--txtColor2);
+  text-decoration: none;
+  line-height: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+.main_nav .links a.active{
+  background: var(--brandingColor);
+  color: var(--txtColor1);
+}
